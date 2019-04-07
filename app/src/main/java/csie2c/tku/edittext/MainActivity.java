@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    int size = 15; //sp
+    int size = 30; //sp
 
     public void responds(View V){
         EditText ed1,ed2,ed3;
@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         ed1 = findViewById(R.id.editText);
         ed2 = findViewById(R.id.editText2);
         ed3 = findViewById(R.id.editText3);
-        txv = findViewById(R.id.);
+        txv = findViewById(R.id.textview);
 
         txv.setTextSize(size);
-        txv.setText("");
+        txv.setText("hellow ");
     }
 }
