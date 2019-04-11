@@ -3,4 +3,6 @@
     <string name="name" >Name</string>
     <string name="tall" >Tall(cm)</string>
     <string name="weight" >Weight(kg)</string>
+    <string name="hello">Hello</string>
+    <string name="yourBMI">your BMI is</string>
 </resources>

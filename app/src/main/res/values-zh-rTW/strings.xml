@@ -4,4 +4,6 @@
     <string name="name">輸入名字</string>
     <string name="tall">身高(公分)</string>
     <string name="weight">體重</string>
+    <string name="hello">你好</string>
+    <string name="yourBMI">你的BMI是</string>
 </resources>
