@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,10 +41,30 @@ public class MainActivity extends AppCompatActivity {
                     "\n"+
                     getResources().getString(R.string.yourBMI)+"\n"+
                     BMI2);
+        Toast.makeText(this,standardBMI(BMI1),Toast.LENGTH_LONG).show();
     }
+
 
     private float calculateBMI(float height,float weight){
         float BMI = (float)(weight/Math.pow(height/100,2));
         return BMI;
+    }
+
+    private String standardBMI(double BMI){
+        String alert = "";
+
+        if(BMI>25){
+            alert = String.valueOf("You are too heavy");
+            getWindow().setBackgroundDrawableResource(R.drawable.fat_cat);
+        }
+        else if(BMI < 18.5){
+            alert = String.valueOf("You are too slim");
+            getWindow().setBackgroundDrawableResource(R.drawable.sad_cat);
+        }
+        else{
+            alert = String.valueOf("Your body is good");
+        }
+
+        return alert;
     }
 }
